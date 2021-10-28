@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+.Clear {
+    clear: both;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row {
+    padding-left: -8px;
+    padding-right: -8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col {
+    float: left;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.col-thir {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.text-white {
+    color: white !important;
+}
+
+/* header */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#header-bart {
+    display: none;
+}
+
+#header-bart,
+.header-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 14px;
+}
+#header .ti-icon-mobile:hover {
+    color: #333;
+    background-color: #ccc;
+}
+#header .search-icon:hover {
+    background-color: red;
+}
+#header .ti-icon-mobile,
+#header .search-icon {
+    color: white;
+    padding: 16px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
+    color: #333;
+    background-color: #ccc;
+}
+
+#nav > li >a {
+    text-transform: uppercase;
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+
+#nav .subnav a {
+    color: black;
+    line-height: 37px;
+    padding-left: 12px;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li {
+    background-color: white;
+    min-width: 160px;
+    
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* slider */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+.slider-content {
+    position: absolute;
+    bottom: 46px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.slider-header {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px;
+}
+.text-desripsion {
+    font-size: 15px;
+    line-height: 1.5;
+    text-shadow:0 0 1px rgba(0, 0, 0, 0.5);
+
+}
+
+/* content */
+/* band */
+.content-section {
+    padding: 64px 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+.section-header {
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+.section-subheader {
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom:50px;
+    text-align: center;
+}
+#content .text-descripsion {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.content-band {
+    padding: 32px 0;
+}
+
+.content-band .content-name {
+    margin: 15px;
+}
+.content-band .content-img {
+    width: 154px;
+    border-radius: 5px;
+}
+/* tour */
+.content-tour {
+    background: black;
+}
+
+.content-tour .tour-about {
+    list-style-type: none;
+    background-color: white;
+    color: black;
+}
+.content-tour .tour-time {
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5;
+}
+.content-tour .sold-out {
+    color: white;
+    background-color: red;
+    padding: 3px;
+    margin-left: 16px;
+}
+.content-tour .quatity {
+    float: right;
+    color: white;
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-right: 16px;
+    border-radius: 50%;
+}   
+
+.tour-list {
+    margin-top: 30px;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: 15px;
+}
+
+.tour-list .tour-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-list .tour-img:hover {
+    opacity: 0.7;
+}
+
+.tour-list .item-about {
+    background-color: white;
+    color: black;
+    padding:0 16px;
+}
+.tour-list .about-heading {
+    padding: 15px 0;
+    line-height: 1.5;
+}
+.tour-list .about-subheading {
+    padding-bottom: 15px;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+.tour-list .about-text-descripsion {
+    line-height: 1.5;
+}
+
+.tour-list .tour-btn {
+    margin: 15px 0;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.tour-list .tour-btn:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+/* modal */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    animation:scrollcontainer ease .3s;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.container .container-out {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container .ti-close {
+    color: white;
+    padding: 14px;
+}
+.container .ti-close:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+.container .container-icon {
+    background-color: #009688;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 32px 0;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.container .container-body {
+    padding: 0 16px;
+    background-color: white;
+    padding-bottom: 40px;
+}
+.container .label-money {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+
+.container .container-input {
+    display: block;
+    padding: 12px;
+    border: 1px solid #000;
+    width: 100%;
+    font-size: 15px;
+}
+
+.container .container-pay:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+.container .container-pay {
+    background-color: #009688;
+    color: white;
+    width: 100%;
+    padding: 18px;
+    margin: 10px 0;
+    border: none;
+}
+
+.container .container-need {
+    float: right;
+    padding-top: 5px;
+}
+ 
+.modal.open {
+    display: flex;
+}
+
+@keyframes scrollcontainer {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* contact */
+
+.contact .ti-icoon {
+    padding-right: 10px;
+}
+
+.contact p {
+    line-height: 27px;
+}
+
+.contact .form-control {
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.contact.row {
+    font-size: 18px;
+}
+
+button.contact-send:hover {
+    color: #333;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+button.contact-send {
+    background-color: black;
+    color: white;
+    border: none;
+    float: right;
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* map */
+.img-map {
+    padding-top: 40px;
+}
+.img-map img {
+    width: 100%;
+}
+/* footer */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#footer .footer-icon {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-des a {
+   color: black;
+}
+
+#footer .footer-icon:hover {
+    color: #333;
+    background-color: #ccc;
+}
